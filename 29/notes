@@ -1,0 +1,7 @@
+<a> element or Anchor element.
+This is how you create hyperlinks.
+    <a href="https://google.com">Go to Google!</a>
+
+You have to include the https:// part. Otherwise it just tries to go to yourhtmlfile.com/google.com
+To go to another page in your website, if the file is in the same directory, simply type:
+    <a href="about.html">About Me!</a>
