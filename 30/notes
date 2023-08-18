@@ -9,3 +9,11 @@ accessibility and in case a picture doesn't load.
     <img src="picture.png" alt="A picture">
 
 Can do things like "width=200px" but this is bad practice. This should be done in CSS.
+
+_______________
+
+
+COMMENTS
+Html comment syntax is <!-- Here's my comment -->
+VS Code has a shortcut of Control + / to automatically comment a line.
+Will even comment a line that already has code in it, or just create a new comment.
