@@ -1,0 +1,36 @@
+HTML boilerplate is standard things that have to go in every html document.
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+            </title>
+        </head>
+        <body>
+        </body>
+    </html>
+
+<!DOCTYPE html>
+    This is a flag that tells the browser to use the latest tools to read html.
+
+<html>
+    This is the root or top-level element of the page.
+    Everything should go inside this tag.
+    Permitted content:
+        One <head> element and one <body> element.
+
+<head>
+    AKA the Document Metadata element.
+    Contains things that don't show up on the page.
+    It's more data about the page. Like <title>, references to scripts, CSS stylesheets, etc.
+
+<title>
+    Goes inside the <head> element.
+    This is what the tab of the browser will say.
+
+<body>
+    Contains all of the content that will be displayed on the page.
+
+
+VS Code has a shortcut that will generate boilerplate for you.
+On a blank .html file, simply type "!" without quotes and hit Tab.
