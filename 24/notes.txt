@@ -1,0 +1,25 @@
+H tags go from H1 - H6
+H1 should be the top-level, and then incrementally go down from there.
+    Example, starting with H1, and then indent for the next H levels
+    H1 Chicken
+        H2 Terminology
+        H2 Etymology
+        H2 Biology and habitat
+            H3 Behavior
+                H4 Social Behavior
+                H4 Vocalizations
+                H4 Crowing
+                H4 Courtship
+                H4 Nesting and laying behavior
+            H3 Embryology
+            H3 Genetics and genomics
+        H2 Origin and dispersal
+
+The H tags don't necessarily indicate size. You could use CSS to change H1 to tiny and H6 to huge. But this is improper usage.
+
+There should only be at most ONE H1 on a page, and it should be the top-level heading.
+
+The only time you should use H2 is if there's an H1.
+The only time you should use H3 is if there's an H2.
+The only time you should use H6 is if there's an H5.... and a 4 and 3 and 2 and 1.
+Etc.
