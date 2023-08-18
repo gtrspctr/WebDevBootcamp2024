@@ -1,0 +1,32 @@
+<ul> is for Unordered Lists, or lists with dots that are NOT numbered.
+    - Item 1
+    - Item 2
+    - Item 3
+
+<ol> is for Ordered Lists, or lists that are sequenced with Numbers or letters.
+    1. Item 1
+    2. Item 2
+    3. Item 3
+
+They both have nested elements.
+These elements are <li>, or Listed Item.
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+Permits zero or more <li>, <script>, and <template> elements.
+For now, we'll only do <li> - Ignore the others.
+
+Inside <li> elements you can do lots of things, though.
+You can do another list, making it a nested list.
+    <ul>
+        <li>Example 1</li>
+            <ul>
+                <li>abc</li>
+                <li>def</li>
+            </ul>
+        <li>Example 2</li>
+        <li>Example 3</li>
+    </ul>
