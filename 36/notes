@@ -1,0 +1,12 @@
+HTML ENTITIES (or ENTITY CODES)
+A way to write special characters
+
+Starts with an ampersand and ends with a semicolon
+Used to display reserved characters that would normally be invalid
+    Such as lesser than / greater then brackets.
+    The ampersand is also a reserved code.
+        This can be used with &amp;
+    In HTML, these are reserved for elements.
+Or ones that are difficult to type
+    Such as a copyright symbol
+The browser translates the entity code and renders the correct symbol

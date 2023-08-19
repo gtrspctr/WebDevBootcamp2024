@@ -1,0 +1,22 @@
+<hr> the Thematic Break (Horizontal Rule) element
+Does not have a closing tag.
+No attributes
+Simply creates a line going acorss a line to break up sections
+
+<br> the Line Break element
+Simply makes a newline.
+An example could be a poem within a <p> block. Each line would be
+    together normally, but you could put a <br> tag where the lines
+    are supposed to break up, and it would look like a poem in
+    the browser.
+
+<sup> the Super Script element
+Super Script is text that is elevated from the baseline, such as
+    powers in math.
+        i.e., a^2 (a squared) or 10^32 (10 to the power of 32)
+Wikipedia uses this for it's citation numbers
+
+<sub> the Subscript element
+Subscript is text that is below the baseline, such as molecular
+    elements
+        i.e., H2O (the 2 should be below the H and the O)
