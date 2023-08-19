@@ -1,0 +1,25 @@
+Inline element
+    Inline elements can share the same line/block.
+    For example, there can be multiple a tags and the browser will
+    show them on the same line.
+    Same with img tags.
+    Basically anything that can show other things on the same block.
+
+Block element
+    A block element is something that takes up the whole "line" of the page.
+    This includes any of the h tags, p tags
+    This means the tag will make everything else go to the next line.
+
+<div> or The Content Division element
+    Just a generic container to hold things or group them together.
+    Is a Block element
+    Multiple things can be in div, but anything ouside of the div, it 
+        will force those above or below it.
+    
+
+<span>
+    Generic container that holds and Inline element.
+    This can be used to highlight individual words in a larger text instance.
+        For example, you want to highlight some keywords red, wrap the words
+            in a span tag.
+    It does not take it's own block of content.
