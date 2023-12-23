@@ -30,3 +30,31 @@ You can actually nest the <input> inside of the label
     ^This is less common though. It's far more standard to do separate tags and link them using "for" and "id".
     The standard way will actually let you style things differently in CSS too.
     So just do it the regular way.
+
+BUTTONS
+<button>
+Represents a clickable button.
+Whatever text you put between the opening and closing brackets is what you'll see.
+When it's inside a <form>, <button> will take you to whatever the <form action=""> is.
+    So if you have <form action="/tacos">, clicking the button will take the user to /tacos.
+When it's outside the form, it does nothing by default. (you can use js to make it do something.)
+The "type" attribute will let you change the action
+Instead of using <button>, you can use <input type="submit">
+    However, in order to customize the text is you have to also include the attribute "value".
+    So,
+        <input type="submit" value="Click Me">
+    And of course there is no closing tag.
+    This is an option, but it's perhaps a bit clunkier.
+
+THE NAME ATTRIBUTE
+'name=""'
+This is used with an <input> tag to dictate where the inputted data will go.
+Basically, it's like a dictionary...
+    The <input name=""> is a key and whatever the user enters is a value.
+So when the form is submitted, it will go to the form action, plus with the input names
+    <form action="tacos">
+    <input name="username">
+    file:///tacos?username=bob
+    file:///tacos?username=bob&password=Password123
+So it almost is like a query pretty much.
+"name" should be used for every <input> tag
