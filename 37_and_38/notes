@@ -1,0 +1,108 @@
+SEMANTIC MARKUP
+"Semantic" : Relating to meaning
+
+A lot of websites just have <div> tags and that covers everything. Each layer is a div, and that's most of what you'll see in the source code.
+Semantic markup includes tags that are basically <div> tags but they contain more meaning for the reader of the code.
+    Example
+        <div class="example">
+            <main>
+                <header>
+                    blah blah blah
+                </header>
+                <section id="intro">
+                    introduction here
+                </section>
+                <section id="middle">
+                    Some middle stuff here
+                </section>
+                <section id="illustration">
+                    a picture here
+                </section>
+                <footer>
+                    some more stuff here
+                </footer>
+            </main>
+        </div>
+The reason for doing this instead of divs:
+    For other computers (bots, crawlers, machine-reading). Improves SEO.
+    Making code more accessible for people who need to use screen readers.
+    Easier to read for other developers and yourself.
+
+SEMANTIC ELEMENTS
+<main>
+    Represents the dominant content of the <body> of a document
+    The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+    Should exclude content that is repeated across a set of documents
+        Sidebars
+        Navbars
+        Copyright information
+        Logos
+        Search forms (unless the search form is the main function of the page)
+<nav>
+    Represents anything on the page that provides navigation links
+        Menus
+        Tables of contents
+        Indexes
+    Could be links to things on the same page or different pages
+<section>
+    Represents a standalone section which doesn't have a more specific semantic element to represent it.
+    Typically, but not always, sections have a heading.
+<article>
+    Represents a self-contained composition in a document, page, application, or site.
+    Intended to be independently distributable or reusable (e.g., in syndication)
+    Example:
+        Forum post
+        Magazine/newspaper article
+        Blog entry
+        A box that contains weather forecast
+        A widget
+        Something that is linkable or can be viewed/referenced from another site
+    Should include a heading (<h1>-<h6>) as a child of the <article> element.
+    When an <article> is nested, the inner element represents an article related to the outer element.
+        Example:
+            The comments of a blog post can be <article> elements nested in the <article> element representing the blog post.
+    Author information of an <article> element can be provided using the <address> element
+        Does not apply to nested <article> elements
+    The publication date/time of an <article> can be described using the "datetime" attribute of a <time> element.
+        There used to be a "pubdate" attribute of <time>, but this is no longer a part of the HTML5 standard.
+<aside>
+    Represent a portion of a document whose content is only indirectly related to the doc's main content.
+    Frequently presented as sidebars or call-out boxes.
+    Tangential. Could be used as a quote or detail about what the document is talking about.
+<header>
+    Represents introductory content.
+    Will often include navigational content as well.
+<footer>
+    Represents bottom of the page stuff, or bottom of a section.
+    Example:
+        Could have page navigational links and copyright info at the bottom of a page
+        Or could have author and copyright information at the bottom of an <article>.
+        etc.
+<time>
+    Represents a specific period in time
+    May include "datetime" attribute to translate dates into machine-readable format
+        Allows for better search engine results or custom features such as reminders
+    May represent one of the following:
+        A time on a 24-hour clock
+        A precise data in the Gregorian calendar (with optional time and timezone info)
+        A valid time duration
+    Doesn't format any text on its own. Simply makes it machine-readable.
+<figure>
+    Represents self-contained content, potentially with an optional caption using the <figcaption> element.
+    The figure, its caption, and its contents are referenced as a single unit.
+    Example:
+        A picture with a caption
+<abbr>
+    Represents an abbreviation or acronym.
+    When using an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the <abbr> markup. This informs the user what the abbreviation means
+    Then every use after that, can just use the abbreviation along with the <abbr> element.
+<data>
+    Links a given piece of content with a machine-readable translation
+        If the content is time- or date-related, the <time> element must be used.
+    Example:
+        A list that displays product names but also associates each name with a product number.
+            <ul>
+                <li><data value='123'>Mayo</data></li>
+                <li><data value='420'>Mustard</data></li>
+                <li><data value='666'>Ketchup</data></li>
+            </ul>
