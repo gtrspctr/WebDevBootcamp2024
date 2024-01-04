@@ -1,0 +1,46 @@
+HTML TABLES
+Data table
+2-dimensional with rows and columns
+In the 90s and 2000s, tables used to be used to layout a website
+
+<table>
+
+<td>
+Table Data Cell
+A single cell in a table
+
+<tr>
+Represents a row of cells in a table
+
+<th>
+Defines a cell as header of a group of table cells
+
+<thead>
+Defines the header area of the table
+Can have more than one row in the header.
+    Say, if a header had multiple "sub-headers"
+    City    Country         City Proper                 Metropolitan Area
+                        Definition  Population      Population  Area
+
+<tfoot>
+Defines the footer area of the table
+Not often used, but can be used if the bottom row of the table has like totals or averages or something that's cumulative of the main table data.
+
+<tbody>
+Defines the main body of the table (i.e., not the headers or footers)
+
+
+COLSPAN & ROWSPAN
+<th rowspan="1">Header 1</th>
+Defines how many rows a header will take up.
+Useful if you have multiple rows where some headers have sub-headers, but not others.
+    Ones WITHOUT sub-headers will be rowspan="2" (or however many the total is)
+    Ones WITH sub-headers will be rowspan="1"
+        Or you can just not do that if you want.
+
+<th colspan="1">Header with sub-headers</th>
+Same thing as rowspan, except you define how many columns to take up with a single header.
+Useful if you have multiple sub-headers under a single header.
+    <th colspan="2">
+    ^This means a header will take up two columns
+    And then you would have the sub-headers under that
