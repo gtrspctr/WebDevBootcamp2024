@@ -28,3 +28,5 @@ You can actually nest the <input> inside of the label
     </label>
     ^Then you won't need the "for" and "id".
     ^This is less common though. It's far more standard to do separate tags and link them using "for" and "id".
+    The standard way will actually let you style things differently in CSS too.
+    So just do it the regular way.
