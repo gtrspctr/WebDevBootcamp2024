@@ -1,0 +1,19 @@
+THE FORM ELEMENT
+<form>
+Represents a document section containing interactive controls for submitting information
+    Username and password fields
+    Buttons
+    Radial buttons
+    Checkboxes
+<form> is the container where you hold data inputs
+Also specifies where you want the data to go
+    database
+    external server
+    etc
+With code, you can just type "form" and press tab and Emmet will write:
+    <form action=""></form>
+The "action" attribute specifies where the form data should be sent.
+The "method" attribute specifies which HTTP method should be used
+    GET
+    POST
+    etc

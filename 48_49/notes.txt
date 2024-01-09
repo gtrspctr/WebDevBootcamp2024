@@ -1,0 +1,30 @@
+COMMON INPUT TYPES
+The most common form element is <input>
+Can do 20+ types of inputs
+"type" attribute specifies what type of input to do
+    Checkbox
+    Text
+    etc
+<input> has no closing tag.
+    You simply do <input [whatever other attributes here]>
+"placeholder" is an attribute that shows some value you want to be in the input field
+
+
+LABELS
+<label>
+Really important for accessibility
+A label isn't just text. It ties text to the form.
+    Like a checkbox. It ties the options in a list to the specific checkbox.
+    Helps with screen readers.
+    It also makes the text clickable, so you can click the text to check the box as well as the box itself.
+In the <input> field, you should use the "id" attribute to give the input a name
+Then you use <label> with the "for" attribute and you make that equal to the same name as the <input id>
+    <label for="cheese">Do you like cheese?</label>
+    <input type="checkbox" name="cheese" id="cheese">
+You can actually nest the <input> inside of the label
+    <label>
+        Enter your username:
+        <input type="text" placeholder="username here">
+    </label>
+    ^Then you won't need the "for" and "id".
+    ^This is less common though. It's far more standard to do separate tags and link them using "for" and "id".
