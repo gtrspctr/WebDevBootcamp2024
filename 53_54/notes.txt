@@ -1,0 +1,59 @@
+MORE INPUT TYPES
+Checkbox
+    <input type="checkbox">
+    You want to include a <label> for sure, otherwise the user won't know what they're checking.
+    You can also specify whether the box is checked by default or not
+        Checked:
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label for="scales">Scales</label>
+        Unchecked:
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
+        ^Unchecked just doesn't have the "checked" attribute.
+    One example where you might want it checked is if the user already submitted the form and you load the previously submitted data.
+Radio Buttons
+    Similar to checkboxes but you can only select one
+    There are two big differences in the code
+        First, you must give all the options in the same form the same "name" attribute. This will tie them together.
+        Second, when submitted, the url will simply say "?option=on". To give it the specific value, you must use the "value" attribute.
+    Example:
+        <form action="/radio">
+            <div>
+                <input type="radio" id="employed" name="employment_status" value="employed">
+                <label for="employed">Employed</label>
+            </div>
+            <div>
+                <input type="radio" id="unemployed" name="employment_status" value="unemployed">
+                <label for="unemployed">Unemployed</label>
+            </div>
+            <div>
+                <input type="radio" id="welfare" name="employment_status" value="welfare">
+                <label for="welfare">Welfare</label>
+            </div>
+            <button>Submit</button>
+        </form>
+Select
+    This is a dropdown menu
+    This is actually two things: <select> and <option>
+    <select> is where we put the "name" and "id"
+    <option> goes underneath, and just has the "value"
+    Can (and should) also have a <label> like the others.
+    Example:
+        <form action="/select">
+            <div>
+                <label for="pet_select">Select a pet:</label>
+            </div>
+            <div>
+                <select name="pet_select" id="pet select">
+                    <option value="" selected>--Select an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="iguana">Iguana</option>
+                    <option value="raccoon">Raccoon</option>
+                    <option value="snake">Snake</option>
+                </select>
+            </div>
+            <button>Submit</button>
+        </form>
+    It's common to have the first option be a dummy with a blank value (see above example).
+    The "selected" attribute will pre-select an option. (see above)
