@@ -57,3 +57,17 @@ Select
         </form>
     It's common to have the first option be a dummy with a blank value (see above example).
     The "selected" attribute will pre-select an option. (see above)
+
+Range
+    This creates a slider. Such as a volume slider.
+    Can set minimum and maximum values with "min" and "max" attributes.
+    Can choose the amount to increment with "step" attribute.
+
+Number
+    Already learned this one, but you can choose a min and max for this too.
+    Can also do Step here
+
+Text area
+    <textarea>
+    This is basically a text input box.
+    So the user can enter text in the <textarea>
