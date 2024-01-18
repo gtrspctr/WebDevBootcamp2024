@@ -1,0 +1,29 @@
+FORM VALIDATION
+Validating user-entered data
+    Example:
+        Password requirements
+There are browser validations you can use in HTML
+There are also server-side validations
+And also things you can do with javascript, etc.
+This lesson is on browser validations
+
+"required" attribute goes inside the <input> tag
+    <input type="text" name="test" id="test" required>
+Not necessarily every browser will respond the same...
+    ...but generally the browser will not submit the form and popup a message if a required field isn't met.
+
+There are "minlength" and "maxlength" attributes to determine how long data should be
+    <input type="text" name="test" id="test" minlength="5" maxlength="32" required>
+
+"min" and "max" can also be used for numbers
+
+"pattern"
+Lets you define something using regular expression (regex)
+This can be used to do password validation
+    Like you can use regex to see if something contains uppercase letter, lowercase letter, number, and number of characters
+You can also do email validation.
+    e.g., does the data contain characters@characters.something
+
+Some types have "built-in" validation
+input type="email" checks if there is an @ symbol with data behind in
+type="url" checks
