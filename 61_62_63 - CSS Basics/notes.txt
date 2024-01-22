@@ -1,0 +1,85 @@
+INCLUDING STYLES CORRECTLY
+3 ways to include CSS styles:
+    Inline styles
+        Write your CSS directly inline on each HTML element
+        Not recommended most of the time
+    The <style> element
+        Write your CSS styles inside of the <style> HTML element.
+        This is easy but makes it impossible to share styles between documents.
+        Not recommended either.
+    Stylesheet
+        Write your styles in a separate document.
+        Reference it using the <link> element in the <head> section.
+        Recommended.
+
+Inline styles
+    See: inline_styles.html
+    Uses the "style" attribute.
+        <h1 style="color: blue">
+        <button style="background-color: green">
+    Impossible to share styles between different documents
+    Also would have to make the same changes to each element if you want them to look the same.
+
+The <style> element
+    See: style_element.html
+    Uses the <style> element inside the <head> section.
+        <head>
+            <style>
+                h1 {
+                    color: green;
+                }
+                button {
+                    color: red;
+                    background-color: black;
+                }
+            </style>
+        </head>
+
+Stylesheets
+    See: stylesheet.html and stylesheet.css
+    The css stylsheet is a separate file.
+    Referenced using <link> in the <head> section.
+    Contains an "href" to the path of the .css file
+    Also contains a "rel" attribute to tell it that it's a stylesheet.
+
+
+COLOR AND BACKGROUND-COLOR
+Colors can be represented by a bunch of different types
+    name
+        color: red;
+    hex
+        color: #00ff00;
+    rgb
+        color: rgb(123, 100, 99);
+    hsl
+        color: hsl(30, 100%, 50%);
+    and more!
+"color" defines text color.
+"background-color" defines background color.
+    button {
+        color: red;
+        background-color: purple;
+    }
+There is also "background" which will change the color.
+    However, this is more powerful and does other stuff.
+    If you want to just change the background color, use background-color.
+
+
+COLORS
+Named colors
+    All browsers are supposed to recognize 140 colors by name
+        "red"
+        "plum"
+        "blue"
+        "lightskyblue"
+        etc
+RGB
+    red green blue
+    These can be added together to define a color
+    Uses numbers from 0 to 255 for each one
+        rgb(0, 0, 0) would be black
+        rgb(255, 255, 255) would be white
+        rgb(50, 75, 123) would be somewhere else, with more blue than anything else.
+
+HEX
+    

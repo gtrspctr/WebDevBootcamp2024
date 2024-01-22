@@ -1,0 +1,18 @@
+h1 {
+    color: indigo;
+    background: orange;
+}
+
+h2 {
+    color: orangered;
+}
+
+button {
+    color: red;
+    background-color: rgb(89, 151, 0);
+}
+
+p {
+    color: olivedrab;
+    background-color: black;
+}
