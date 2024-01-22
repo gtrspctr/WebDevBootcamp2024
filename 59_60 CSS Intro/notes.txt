@@ -1,0 +1,21 @@
+CSS
+Cascading Style Sheets
+A language we can use to describe the appearance of our HTML
+CSS is easy to get the hang of, but overwhelming how many properties can be described
+
+Syntax is like:
+    selector {
+        property: value;
+    }
+Examples:
+    h1 {
+        color: purple;
+    }
+    img {
+        width: 100px;
+        height: 200px;
+    }
+    Select every other text input and give it a red border:
+        input[type="text"]:nth-of-type(2n) {
+            border:2px solid red;
+        }
