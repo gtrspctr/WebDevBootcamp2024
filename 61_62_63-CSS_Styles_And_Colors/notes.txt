@@ -82,4 +82,23 @@ RGB
         rgb(50, 75, 123) would be somewhere else, with more blue than anything else.
 
 HEX
+    Based off same color model as rgb
+    Each ranges from 0-255
+    Except written using hexidecimal notation
+    Hexidecimal is a base-16 numbering system
+    0-9, and then A-F
+    0 is 0, F is 15. So the largest single-digit hex number is F.
+        In decimal the largest two-digit number is 99.
+        In hex, the largest two-digit number is FF. (or sort of 1515, which is weird)
+    But ff is equal to 255.
+    Starts with a number sign #
+    In hex...
+        Red would be #ff0000
+        Green would be #00ff00
+        Blue #0000ff
+    Hex is generally used more than RGB
+    If the r, g, or b value pairs are the same, you only have to write 1 digit
+        So, instead of #000000, you can do just #000
+        Or instead of #cc5599, you can do just #c59
+        But this shouldn't dictate what colors you choose because that obviously limits the amount of colors you can use.
     

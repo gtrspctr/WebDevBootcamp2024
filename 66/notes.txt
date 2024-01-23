@@ -1,0 +1,11 @@
+CSS TEXT PROPERTIES
+text-align
+    alignment
+font-weight
+    how bold?
+text-decoration
+    italicized
+line-height
+letter-spacing
+etc.
+
