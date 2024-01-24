@@ -2,12 +2,18 @@ h1 {
     text-align: center;
     text-decoration: green underline dotted;
     letter-spacing: 10px;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: arial, verdana, futura;
 }
 
 p {
     text-align: left;
     font-weight: 700;
     line-height: 1.5;
+    font-family: arial;
 }
 
 a {

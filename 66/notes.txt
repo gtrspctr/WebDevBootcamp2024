@@ -9,3 +9,27 @@ line-height
 letter-spacing
 etc.
 
+FONT SIZES
+Lots of different options
+We have relative and absolute units
+
+px (pixel) is the most commonly used absolute unit.
+1px is not necessarily one screen pixel.
+But two things on the page that are 10px will both be the exact same size.
+Not recommended on responsive websites.
+
+FONT FAMILY
+What we use to change the font
+Uses fonts that the browsers know, until later when we learn how to install our own font.
+font-family: arial;
+
+A font stack is a list of fonts that you would like to use in order.
+So the top one is the one you would like to use...
+    But if that doesn't work, the browser will attempt to use the next on the list.
+    Then the next, etc.
+This is used in CSS with commas:
+    font-family: arial, verdana, futura;
+This also goes for types of fonts.
+    So you could do: font-family: arial, sans-serif;
+    Where "serif" is a type of font.
+    So if your first font isn't available then it will try to use at least a sans-serif font.
