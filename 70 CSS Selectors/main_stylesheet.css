@@ -1,0 +1,47 @@
+/** {
+    color: green;
+}*/
+
+body {
+    background-color: #5797ff;
+}
+
+input {
+    background-color: pink;
+}
+
+h1, h2 {
+    color: #114001;
+}
+
+button {
+    color: red;
+    background-color: yellow;
+}
+
+#sign_up {
+    color: yellow;
+    background-color: red;
+}
+
+span {
+    color: gray;
+}
+
+.tag {
+    color: white;
+    background-color: purple;
+    font-size: 16px
+}
+
+a {
+    color: blue;
+}
+
+.post a {
+    color: orange;
+}
+
+footer a {
+    background-color: aqua;
+}

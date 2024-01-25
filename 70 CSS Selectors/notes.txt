@@ -1,0 +1,54 @@
+CSS SELECTORS
+Universal selector
+    Selects everything
+    * {
+        color: black;
+    }
+    This is not recommened. It will literally make EVERYTHING black, including things that can't be black.
+        Images...
+        Divs...
+        Inputs...
+        Buttons...
+        etc
+Element selector
+    Selects all HTML elements of a certain type
+    button {
+        background-color: pink;
+    }
+Multiple element selector
+    Same as before, but you can use a comma to select Multiple
+    h1, h2 {
+        text-decorator: underline;
+    }
+
+ID selector
+    This is where you add an "id" attribute to an HTML element, 
+        then you can select only it.
+    <button id="sign_up">Sign Up</button>
+    #sign_up {
+        color: gray;
+        background-color: green;
+    }
+
+Class selector
+    Similar idea to an ID
+    Except a class can be linked to multiple elements
+    So it groups elements together.
+    Doesn't all have to be the same element type.
+        You can put the same class on a <span> and an <a> and it will style them both.
+    <button class="test">Hi</button>
+    .test {
+        font-size: 16px;
+    }
+
+Descendant selector
+    Selects all nested elements of the specified type.
+    li a {
+        color: blue;
+    }
+    The selection doesn't have to include everything in the nested code.
+        e.g. footer > nav > ul > li > a
+    You can just do the ones you need:
+        e.g. footer a {
+            color: blue;
+        }
