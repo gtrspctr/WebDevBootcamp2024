@@ -82,3 +82,8 @@ Can use wildcards, so like
         color: white;
     }
 That will make it so all a hrefs that contain the word "example" will apply
+Can use a dollar sign which means the href has to END in whatever
+    a[href$=".com"] {
+        color: black;
+    }
+
