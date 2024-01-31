@@ -52,3 +52,33 @@ Descendant selector
         e.g. footer a {
             color: blue;
         }
+
+ADJACENT SELECTOR
+h1 + p {
+    color: blue;
+}
+This selects the element immediately after the first one.
+So, a <p> tag that comes after an <h1>
+
+
+DIRECT CHILD SELECTOR
+Selects elements that are direct descendants of an element.
+div > li {
+    color: green;
+}
+
+ATTRIBUTE SELECTOR
+Selects all elements where the attribute is set to specific thing
+input[type="text"] {
+    width: 20px;
+    color: pink;
+}
+section[class="post"] {
+    color: green;
+}
+
+Can use wildcards, so like
+    a[href*="example"] {
+        color: white;
+    }
+That will make it so all a hrefs that contain the word "example" will apply

@@ -10,6 +10,11 @@ input {
     background-color: pink;
 }
 
+input[type="password"] {
+    background-color: gray;
+    color: yellow;
+}
+
 h1, h2 {
     color: #114001;
 }
@@ -19,6 +24,10 @@ button {
     background-color: yellow;
 }
 
+input + button {
+    background-color: purple;
+}
+
 #sign_up {
     color: yellow;
     background-color: red;
@@ -26,6 +35,10 @@ button {
 
 span {
     color: gray;
+}
+
+section[class="post"] {
+    background-color: green;
 }
 
 .tag {
@@ -44,4 +57,14 @@ a {
 
 footer a {
     background-color: aqua;
+}
+
+footer > a {
+    background-color: blue;
+    color: magenta;
+}
+
+a[href*="goog"] {
+    font-weight: bold;
+    color: magenta;
 }
