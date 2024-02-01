@@ -162,3 +162,93 @@ Examples
     ^ this only seems to work with colors
     ^ MDN says it works with other things, but I could only get it to
         change colors - nothing else.
+
+
+THE CASCADE
+The order you list the CSS is the order it will style elements
+So if you have two h1's, the 1st one will apply, but the 2nd will overwrite.
+
+
+WTF IS SPECIFICITY
+How the browser decides which style to use when multiple rules could apply
+    to the same elements.
+It is a measure of how specific a selector is.
+    The more specific seletor wins.
+
+The way it works is the browser will see what is more specific
+    p {
+        color: yellow;
+    }
+vs
+    section p {
+        color: yellow;
+    }
+The 2nd one is more specific.
+But more complicated than that...
+
+ID > Class > Element
+So an ID is the most specific and will beat out classes
+And classes are pretty specific and will beat out elements
+Elements are the least specific
+
+Basically, the browser figures out a specificity score based on what it finds
+The score has 3 digits
+1st = IDs
+2nd = Classes, attributes, and pseudo classes
+3rd = Elements and pseudo elements
+For each ID, it adds a 1 to the first digit
+For each class, etc, it adds 1 to the 2nd digit
+For each element, etc, it adds 1 to the 3rd digit.
+So if you have a selector with 2 elements...
+    the score will be 002
+If you have a select with an ID...
+    the score will be 100
+If you have a selector with a class and an attribute, and 1 element...
+    the score will be 021
+The higher number wins.
+
+The number NOT the same as decimal numbers though.
+So if you do 12 elements, it's not going to equal 1 class and 2 elements
+It will be more like 0 0 12
+
+
+INLINE STYLES
+These are more specific than IDs and classes
+Not used by anyone but it is a way to do it
+This is done by editing the HTML itself
+    <button id="button" style="color:green">Login</button>
+
+There is also an !important rule
+You should not use this unless there is a specific case to.
+This basically just sets a !important flag in a selector and
+    forces the browser to use that style.
+    h1 {
+        color: green !important;
+    }
+    ^The h1(s) will be forced to show them as green.
+
+
+CSS INHERITANCE
+Any "nested" elements will inherit from the originating element.
+For example
+    <body>
+        <h1>blah blah
+        <h2> blhab blah
+        <section>
+            <p> blah blah
+            <p> blah
+        </section>
+    </body>
+    ^all of the other elements inherit from <body>
+    So if you do something like this...
+        body {
+            color: purple;
+        }
+    All the text in the other elements will inherit the purple color from the body.
+Not all elements inherit by default.
+    Like input fields and buttons
+And not ever attribute is inheritable to everything.
+There is an "inherit" keyword that you can use, though.
+    button {
+        color: inherit;
+    }
