@@ -87,3 +87,78 @@ Can use a dollar sign which means the href has to END in whatever
         color: black;
     }
 
+
+PSEUDO CLASSES
+Keyword added to a selector that specifies a special state of the
+    selected element
+Like
+    If a checkbox has been checked
+    Or if a link has been hovered over
+    Or every other button
+They all start with a colon
+    :active
+Examples
+    a:hover {
+        color: orange;
+    }
+    ^ that selects all a tags when they are being hovered over
+
+    button:active {
+        color: red;
+    }
+    ^ that selects all buttons that are currently being clicked
+
+    input[type="checkbox"]:checked {
+        margin-left: 25px;
+        border: 1px solid blue;
+    }
+    ^ that selects all checkboxes that are checked
+    ^ could also choose radio buttons by changing the type
+
+    p:nth-of-type(2) {
+        background-color: purple;
+    }
+    ^ selects element based on position in a sequence of elements
+    ^ so the above would choose the 2nd <p> element in a series
+
+    p:nth-of-type(2n) {
+        background-color: purple;
+    }
+    ^ the 'n' chooses every second <p> element in a series.
+
+    p:nth-of-last-type(2) {
+        background-color: purple;
+    }
+    ^ Does the same as the first 'nth' example, except in reverse
+    ^ So instead of choosing the 2nd element, it chooses the 2nd to last
+
+
+PSEUDO ELEMENTS
+Keyword added to a selector that lets you style a particular part
+    of a selected element
+So
+    Stylize the first letter
+    or first line
+Usually uses two colons
+    ::
+But can use only one.
+
+Examples
+    p::first-letter {
+        font-size: 50px;
+    }
+    ^ Takes the first letter of every <p> tag and makes it 50px
+
+    p::first-line {
+        color: gold;
+    }
+    ^ Takes the first line of every <p> and makes it gold
+
+    p::selection {
+        color: gold;
+        background-color: red;
+    }
+    ^ changes the color/background of highlighted text
+    ^ this only seems to work with colors
+    ^ MDN says it works with other things, but I could only get it to
+        change colors - nothing else.

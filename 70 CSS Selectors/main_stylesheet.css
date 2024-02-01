@@ -19,6 +19,10 @@ h1, h2 {
     color: #114001;
 }
 
+h2::first-letter {
+    font-size: 50px;
+}
+
 button {
     color: red;
     background-color: yellow;
@@ -28,17 +32,40 @@ input + button {
     background-color: purple;
 }
 
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    background-color: darkolivegreen;
+}
+
+.post button:hover {
+    background-color: red;
+    color: white;
+}
+
 #sign_up {
     color: yellow;
     background-color: red;
 }
 
 span {
-    color: gray;
+    color: purple;
+}
+
+span::selection {
+    color: gold;
+    background-color: brown;
 }
 
 section[class="post"] {
-    background-color: green;
+    background-color: lightgray;
+}
+
+.post:nth-of-type(2n) {
+    background-color: lightslategray;
 }
 
 .tag {
@@ -49,10 +76,16 @@ section[class="post"] {
 
 a {
     color: blue;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .post a {
     color: orange;
+}
+
+.post a:hover {
+    text-decoration: underline;
 }
 
 footer a {
@@ -68,3 +101,4 @@ a[href*="goog"] {
     font-weight: bold;
     color: magenta;
 }
+
