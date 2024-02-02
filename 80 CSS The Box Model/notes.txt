@@ -1,0 +1,61 @@
+THE BOX MODEL
+Everything is CSS is a box, and those boxes have properties
+Everything has a box around it, even if it's not visible
+Inside the box is the Content
+Surrounding the content is the Padding
+Surrounding the padding is the Border
+
+Content
+    If you inspect an element in Chrome, the Content area is marked by blue
+
+Width and Height
+    By default the width/height CSS property sets the content area
+    but if box-sizing is set to border-box, it sets the width of the border area
+    Text by default will try to wrap to match the browser window size
+    But you can set the width property to tell it to be a certain size.
+        div {
+            width: 200px;
+        }
+    These properties set the area of the box, but the text inside won't
+        necessarily scrunch to fit inside that box.
+    It will wrap where needed, but the font size isn't going to change.
+    You can see the content area easily by setting a background-color.
+
+
+BORDER
+The border is the box around the element.
+Outside of the content area and the padding.
+The most important border properties are:
+    border-width
+    border-color
+    border-style
+The border width is additive...
+    Meaning if you set the element width to 200px, and then the border-width
+        to 5px, the total size of the element will be 210px...
+        200px + 5px + 5px (border on either side)
+However, if you set the box-sizing property to border-box, that will subtract
+    the size of the element so the border fits into the specified element size.
+    So then even with the border, it will be 200px by 200px.
+
+For border-style, you can do two or more settings.
+    border-style: solid dashed dotted inset;
+In order, this sets the top, right, bottom, then left sides.
+If you do just two settings, it sets the top and sides.
+If you do three, it sets the top, bottom, and sides.
+
+Then you can also do color, width, and style for each of the sides individually
+    border-left-color: red;
+    border-top-style: solid;
+    border-bottom-color: blue;
+
+You can also do the width, style, and color all at the same time.
+    IN THAT ORDER
+    border: 10px solid blue;
+You can then set individual sides after that.
+    border: 10px solid blue;
+    border-left-width: 15px;
+
+border-radius will let you do rounded corners.
+You can do pixels, but using % will be a percent of the length of the border
+So 10% will use 10% of the total height/width.
+50% is how you do a circle
