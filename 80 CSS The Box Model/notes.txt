@@ -59,3 +59,24 @@ border-radius will let you do rounded corners.
 You can do pixels, but using % will be a percent of the length of the border
 So 10% will use 10% of the total height/width.
 50% is how you do a circle
+
+PADDING
+Metaphor:
+    If you're shipping something, the fragile item is the content,
+        the border is the box you're fitting it in,
+        and the padding is the packing material around the content.
+In Chrome dev tools, the padding is marked green.
+We have attributes:
+    padding-top
+    padding-bottom
+    padding-left
+    padding-right
+But we also have shorthand:
+    Apply to all 4 sides:
+        padding: 10;
+    Vertical / Horizontal:
+        padding: 10px 20px;
+    Top / Horizontal / Bottom:
+        padding: 5px 10px 12px
+    Top / Right / Bottom / Left:
+        padding: 1px 2px 3px 4px
