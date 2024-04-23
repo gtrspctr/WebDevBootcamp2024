@@ -1,8 +1,9 @@
 h1 {
-    background-color: pink;
-    width: 100px;
-    padding-left: 100px;
+    background-color: palegoldenrod;
+    padding-left: 00px;
     padding-top: 50px;
+    border: 1px solid black;
+    display: inline;
 }
 
 div {
@@ -37,4 +38,9 @@ div {
 
 button {
     padding: 10px 20px 30px 40px;
+}
+
+span {
+    background-color: aquamarine;
+    border: 1px solid black;
 }

@@ -80,3 +80,27 @@ But we also have shorthand:
         padding: 5px 10px 12px
     Top / Right / Bottom / Left:
         padding: 1px 2px 3px 4px
+
+MARGIN
+Like padding, except padding is on the inside of the element, meaning it
+    pushes the border out further the bigger it is, and margin is on the
+    outside, meaning space outside of the border will be pushed the bigger
+    it is.
+In Chrome dev tools, the margin is marked orange.
+Other than that, basically the same idea with the same attributes and
+    behavior.
+Some tags have default margins. Like <body> has a default of 8px.
+    People will usually remove that first thing in their CSS, so there isn't
+    some mystery space.
+
+DISPLAY PROPERTY (First encounter)
+3 types:
+    Inline
+        Width & Height are ignored
+        Margin & padding push elements away horizontally but not vertically
+    Block
+        Breaks the flow of a document
+        Width, Height, Margin, & Padding are respected
+    Inline-Block
+        Behave like an inline element except Width, Height, Margin, Padding
+            are respected.
