@@ -104,3 +104,20 @@ DISPLAY PROPERTY (First encounter)
     Inline-Block
         Behave like an inline element except Width, Height, Margin, Padding
             are respected.
+
+CSS UNITS
+Relative Units
+%
+    Percentages
+        Always a percentage of some other value
+        Sometimes it's a value from the parent.
+        Others it's a value from the element itself.
+        width: 50%;
+            Half the width of the parent
+        line-height: 50%;
+            Half the font-size of the element itself
+em
+    With font-size, 1em equals the font-size of the parent.
+    2em is twice the font size of the parent.
+    With other properties 1em is equal to the computed font-size of the
+        element itself.

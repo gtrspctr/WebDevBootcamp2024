@@ -7,7 +7,7 @@ h1 {
 }
 
 div {
-    width: 200px;
+    width: 500px;
     height: 200px;
 }
 
@@ -43,4 +43,5 @@ button {
 span {
     background-color: aquamarine;
     border: 1px solid black;
+    display: block;
 }

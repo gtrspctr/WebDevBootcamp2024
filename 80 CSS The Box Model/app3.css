@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+section {
+    background-color: gold;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: darkblue;
+    width: 50%;
+    height: 50%;
+}
