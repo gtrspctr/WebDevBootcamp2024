@@ -1,3 +1,7 @@
+html {
+    font-size: 10px;
+}
+
 body {
     margin: 0;
 }
@@ -16,4 +20,45 @@ div {
     background-color: darkblue;
     width: 50%;
     height: 50%;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+#ems h2 {
+    font-size: 3em;
+    margin-left: 1em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+#ems button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: .5em;
+    background-color: coral;
+    color: purple;
+}
+
+#ems ul {
+    font-size: 1.5em;
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems ul {
+    font-size: 1rem;
+}
+
+#rems button {
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-radius: .5rem;
+    background-color: coral;
+    color: purple;
 }

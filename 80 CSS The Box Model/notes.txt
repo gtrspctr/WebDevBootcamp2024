@@ -121,3 +121,12 @@ em
     2em is twice the font size of the parent.
     With other properties 1em is equal to the computed font-size of the
         element itself.
+    em is a good way to keep things in scale with one another. So you can
+        make a button as part of a section. If you set its measurements
+        in em, you can mess around with the size of the page as a whole
+        and still have the button retain it's relative shape and size.
+    For font-size, its size is relative to its direct parent. It stacks
+        if there are multiple nests.
+rem
+    Like em but relative to the root html element's font size.
+    This does not stack like ems do.
