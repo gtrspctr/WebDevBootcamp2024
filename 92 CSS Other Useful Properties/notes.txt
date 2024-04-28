@@ -18,3 +18,55 @@ opacity
     Governs the entire elements transparency
     Including all child elements
     Also goes from 0 to 1
+
+POSITION
+Sets how an element is positioned in a document
+The top, right, bottom, and left properties determine the final location of
+    positioned elements.
+static
+    The element is poitioned according to the normal flow of the document.
+    top, right, bottom, left, and z-index properties have no effect.
+    This is the default value.
+relative
+    The element is positioned to the normal flow of the document, and then
+        offset relative to itself based on top, right, bottom, and left.
+    The offset does not affect the position of any other elements.
+    Thus, the space given for the element for the element in the page layout
+        is the same as if position were static.
+        In other words, the visual part of the element will move to the offset
+            location, but it's as if the element were still there as far as
+            everything else is concerned.
+        Only the visual moves.
+    Creates a new stacking context when the value of z-index is not auto.
+absolute
+    The element is removed from the normal document flow. No space is created
+        for the element in the page layout.
+    It is positioned relative to its closest positioned ancestor, if any.
+    Otherwise, it is placed relative to the initial containing block.
+        So, if it's in an element with a 'position' value defined, absolute
+            will be positioned in relation to that.
+        Otherwise it will be relative to the <body> (or some other parent that
+            also has a position)
+    Its final position is determined by the values of top, right, bottom, left.
+fixed
+    Like absolute, except it's relative it stays in the same position on the
+        viewport even when scrolling.
+    Its initial position is relative to the closest positioned ancestor when
+        loaded, but then stays in that spot as the page scrolls.
+sticky
+    Like fixed, except as the page scrolls it will change position. But then
+        as it reaches the top of the viewport when scrolling down, it will
+        become fixed so the user will keep seeing it.
+
+TRANSITIONS
+Kinda like a keyframe. You can set a color and shape to one thing, give it
+    a "transition: 1s;" and then set the hover setting to a different color
+    and shape, and when moused-over it will transition smoothly to the hover
+    settings.
+You can set (in this order):
+    Property Name
+    Duration
+    Timing Function
+    Delay
+Example:
+    transition: background-color 1s ease-in 2s;
