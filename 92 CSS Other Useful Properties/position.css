@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(44, 44, 113);
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: blueviolet;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    left: 50%
+}
+
+#absolute #middle {
+    position: absolute;
+    right: 50%;
+}
+
+#fixed #middle {
+    position: fixed;
+    right: 50%;
+}
+
+p {
+    width: 500;
+    font-size: 15px;
+}
