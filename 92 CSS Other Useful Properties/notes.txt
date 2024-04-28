@@ -1,0 +1,20 @@
+OPACITY AND ALPHA CHANNEL
+rgba
+    red
+    green
+    blue
+    alpha
+        how transparent a color is
+Alpha goes from 0 to 1, not 0-255 like the other channels
+Alpha also exists for hex rather than rgb.
+    In that case, hex goes from:
+        #00ccff
+    to:
+        #00ccff00  (fully transparent)
+        #00ccffff  (fully solid)
+    So it simply adds 2 digits to the end that go from 00 to FF.
+
+opacity
+    Governs the entire elements transparency
+    Including all child elements
+    Also goes from 0 to 1
