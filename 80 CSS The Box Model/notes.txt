@@ -92,6 +92,8 @@ Other than that, basically the same idea with the same attributes and
 Some tags have default margins. Like <body> has a default of 8px.
     People will usually remove that first thing in their CSS, so there isn't
     some mystery space.
+"margin: 20px auto"
+    The 'auto' will center the element inside its parent element.
 
 DISPLAY PROPERTY (First encounter)
 3 types:
