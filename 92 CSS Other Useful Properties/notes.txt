@@ -70,3 +70,32 @@ You can set (in this order):
     Delay
 Example:
     transition: background-color 1s ease-in 2s;
+
+TRANSFORMS
+Used to scale, rotate, skew, and otherwise manipulate elements
+Rotate
+    Measurements are:
+        deg
+            Degrees
+            One full circle is 360deg
+            Examples: 0deg, 90deg, 14.23deg
+        grad
+            Gradians
+            One full circle is 400grad
+            Examples: 0grad, 100grad, 38.8grad
+        rad
+            Radians
+            One full circle is 2pi which approximates to 6.2832rad
+            1rad is 180/pi degrees
+            Examples 0rad, 1.0843rad, 6.1234rad
+        turn
+            Turns
+            One full circle is 1turn
+            Examples: 0turn, .25turn, 1.2turn
+Transform-origin
+    You can change the anchor point for the rotation.
+    This is called transform-origin.
+    Examples:
+        transform-origin: top left;
+        transform-origin: bottom right 60px;
+        transform-origin: 50px 50px;
