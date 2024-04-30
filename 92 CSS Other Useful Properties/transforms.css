@@ -48,13 +48,13 @@ section:nth-of-type(2) h1:nth-of-type(2) {
 }
 
 section:nth-of-type(2) h1:nth-of-type(3) {
-    transform: translateX(200px) rotate(-10deg) skewY(20deg) scale(130%);
+    transform: translateX(200px) rotate(-45deg) skewY(20deg) scale(130%);
 }
 
 section:nth-of-type(2) h1:nth-of-type(4) {
-    transform: translateX(-500px) rotate(.5turn) scaleY(1.5);
+    transform: translateX(-250px) rotate(.5turn) scaleY(1.5);
 }
 
 section:nth-of-type(2) {
-    transform: rotate(45deg) translate(500px)
+    transform: rotate(10deg) translate(100px)
 }
