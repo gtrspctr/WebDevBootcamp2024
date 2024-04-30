@@ -99,3 +99,25 @@ Transform-origin
         transform-origin: top left;
         transform-origin: bottom right 60px;
         transform-origin: 50px 50px;
+Scale
+    Changes the size of an element
+    Can do all sides equally
+        transform: scale(.5);
+    Or X and Y independently
+        transform: scale(.5, 2);
+Translate
+    Changes the position of an element
+    Moves X or X and Y
+        transform: translate(50px);  // Moves to the right 50 px
+        transform: translate(50px, 50px);  // Moves right 50px and down 50px
+    Can also do translateX() and translateY()
+Skew
+    Kinda like rotate except for the sides you aren't skewing stay the same
+        size.
+    So it's almost like if you had a square with 90 degree corners, and then
+        you changed the angle of the corners.
+    If you skew the X axis, the top and bottom stay the same but the sides
+        change. If you skew the Y axis, the sides staty the same but the top
+        and bottom change angles.
+You can combine all the transforms by just separating with spaces
+    transform: translateX(10px) rotate(10deg) skewY(10deg);

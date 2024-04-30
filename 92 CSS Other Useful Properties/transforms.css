@@ -28,4 +28,33 @@ h1:nth-of-type(4n) {
 
 section:first-of-type h1:nth-of-type(1) {
     transform: rotate(45deg);
+    transform-origin: center;
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    transform: scale(0.5, 1);
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translate(-50px, 50%);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(10deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: skew(10deg, 5deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: translateX(200px) rotate(-10deg) skewY(20deg) scale(130%);
+}
+
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transform: translateX(-500px) rotate(.5turn) scaleY(1.5);
+}
+
+section:nth-of-type(2) {
+    transform: rotate(45deg) translate(500px)
 }
