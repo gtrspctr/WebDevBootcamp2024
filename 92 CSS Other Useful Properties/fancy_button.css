@@ -13,7 +13,7 @@ button {
     border: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
-    transition: border-color .1s, color .1s, box-shadow .1s, transform .1s;
+    transition: border-color .15s, color .15s, box-shadow .15s, transform .15s;
 }
 
 button:hover {
