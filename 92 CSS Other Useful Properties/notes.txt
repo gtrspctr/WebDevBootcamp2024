@@ -121,3 +121,14 @@ Skew
         and bottom change angles.
 You can combine all the transforms by just separating with spaces
     transform: translateX(10px) rotate(10deg) skewY(10deg);
+
+Box-Shadow
+    Creates a shadow behind an object
+    Properties in order are:
+        X offset
+        Y offset
+        Blur radius
+        Spread radius
+        Color
+    Example:
+        box-shadow: 10px 10% .5em -.4em green;
