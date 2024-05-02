@@ -132,3 +132,6 @@ Box-Shadow
         Color
     Example:
         box-shadow: 10px 10% .5em -.4em green;
+
+Background
+
