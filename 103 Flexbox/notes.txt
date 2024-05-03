@@ -1,0 +1,32 @@
+FLEXBOX
+Newer part of CSS
+Only become standard part of browsers in the last 2-3 years.
+It's a series of properties used to lay out content on our page.
+    Basically just telling elements how to fit into a box.
+A good example is a navbar or some form where the items are all
+    in a row. As you shrink the browser window, the space gets
+    smaller, and the items automatically decide how to fit
+    together.
+Even if you set a width/height on elements in the flexbox, one
+    or both x and y will shrink to fit into the flexbox.
+
+display: flex
+    This basically enables flexbox
+
+In flexbox there are two axises:
+    Main Axis
+    Cross Axis
+flex-direction
+    Allows to choose which direction the Main Axis goes
+    Default is "row" (x / horizontal)
+        flex-direction: row;
+    There is also "row-reverse" which is the same axis but it
+        reverses the items so they'll go right to left.
+        flex-direction: row-reverse;
+    Also "column" and "column-reverse"
+        flex-direction: column;
+        flex-direction: column-reverse;
+    So, row goes left > right
+    row-reverse goes right > left
+    column goes up > down
+    column-reverse goes down > up
