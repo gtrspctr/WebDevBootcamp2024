@@ -30,3 +30,28 @@ flex-direction
     row-reverse goes right > left
     column goes up > down
     column-reverse goes down > up
+
+justify-content
+    How the content is distributed across the main axis
+    Default is 'flex-start'
+        justify-content: flex-start;
+    Starts at the beginning of whichever direction the flex
+        is going. If it's left-right, it starts at the left, etc.
+    'flex-end' adjusts the end of the content to meet the end of the
+        flexbox.
+        So if the direction is 'row'
+            flex-start will group things to the left
+            flex-end will group things to the right
+    'center'
+        Will adjust things so they sit in the middle of the main axis
+    'space-between'
+        Adjust things so they are broken across the main axis evenly
+        Does not include outside edges.
+    'space-around'
+        Same thing as 'space-between' but includes outside edges
+        Each element has the same amount of space on the left and right
+            So it looks wonky because there's double the space between
+                items as there is at the ends
+    'space-evenly'
+        Same as 'space-around' except it evenly spaces everything,
+            including the ends.
