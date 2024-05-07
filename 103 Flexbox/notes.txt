@@ -55,3 +55,48 @@ justify-content
     'space-evenly'
         Same as 'space-around' except it evenly spaces everything,
             including the ends.
+
+flex-wrap
+    Determines how content will wrap into a new row or column
+    3 attributes to know:
+        wrap
+            When reaches the end of the main axis, will wrap to
+                the direction of the cross axis.
+            So if flex-direction is a column, the items will be up/down
+                but when it will wrap to the next row
+        wrap-reverse
+            Will wrap in the cross axis but it will start from the opposite
+                side.
+            Except it will still go in the same direction.
+            So if flex-direction: column;, content will start from upper-right.
+            If flex-direction: column and flex-wrap: wrap-reverse;, content
+                will start from upper-left.
+            So it's not complete opposite.
+            It only changes the direction of the cross axis
+        nowrap
+            The content will not wrap
+
+align-items
+    Distribute space along the cross axis.
+        justify-content is along the main axis
+        align-items is along the cross axis
+    align-items: flex-start;
+        Align items along the beginning of the cross axis
+        If flex-direction: row;, align-items: flex-start; will be along the top
+    align-items: flex-end;
+        Align items along the end of the cross axis
+        If flex-direction: row;, align-items: flex-end; will be along the bottom
+    align-items: center;
+        Align items in the middle of the cross axis
+    align-items: baseline;
+        If you have text, this will align the items by the bottom of the letters
+
+align-content
+    Distribute space along the cross axis, but only when there are multiple
+        rows/columns.
+
+align-self
+    Distributes one item at a time
+    So if you have a row of items, you can choose one of them (or multiple, but
+        it's specific ones) and have them align differently.
+    
