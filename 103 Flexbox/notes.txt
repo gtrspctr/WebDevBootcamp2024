@@ -16,6 +16,7 @@ display: flex
 In flexbox there are two axises:
     Main Axis
     Cross Axis
+    
 flex-direction
     Allows to choose which direction the Main Axis goes
     Default is "row" (x / horizontal)
