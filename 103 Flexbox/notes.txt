@@ -115,3 +115,14 @@ flex-grow
             Won't let elements shrink smaller than 200px
         max-width: 300px;
             Won't let elements grow larger than 300px
+    The measurements of flex-grow are proportions.
+        flex-grow: 1;
+            This will make one or more elements take up all the extra available
+                space.
+        flex-grow: 2;
+            If you apply this to one element, twice the amount of available space
+                will be applied to that element.
+
+flex-shrink
+    Controls how elements shrink if there is not enough space in the container.
+    
