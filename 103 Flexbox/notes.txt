@@ -16,7 +16,7 @@ display: flex
 In flexbox there are two axises:
     Main Axis
     Cross Axis
-    
+
 flex-direction
     Allows to choose which direction the Main Axis goes
     Default is "row" (x / horizontal)
@@ -100,4 +100,18 @@ align-self
     Distributes one item at a time
     So if you have a row of items, you can choose one of them (or multiple, but
         it's specific ones) and have them align differently.
-    
+
+flex-basis
+    Defines the initial size of an element before additional space is distributed
+    This will override width, etc.
+    flex-basis can indicate width or height, depending on the axis
+
+flex-grow
+    Controls the amount of available space an element should take up, if there
+        is available space.
+    One or more elements will expand to fill in the extra space.
+    Here are some cool properties to help you define things:
+        min-width: 200px;
+            Won't let elements shrink smaller than 200px
+        max-width: 300px;
+            Won't let elements grow larger than 300px
