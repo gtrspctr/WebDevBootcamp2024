@@ -125,4 +125,55 @@ flex-grow
 
 flex-shrink
     Controls how elements shrink if there is not enough space in the container.
-    
+
+flex
+    This is a shorthand for flex-basis, flex-grow, and flex-shrink
+    You can give it 1 value, 2 values, or 3 values
+        flex: 2;
+            One value, unitless number: flex-grow
+        flex: 10em;
+        flex: 30%;
+        flex: min-content;
+            One value, width/height: flex-basis
+        
+        flex: 1 30px;
+            Two values: flex-grow | flex-basis
+
+        flex: 2 2 10%;
+            Three values: flex-grow | flex-shrink | flex-basis
+
+Responsive Design
+    A way of designing a webpage so it will adjust to whatever is going on with
+        the screen.
+        Whether it's a mobile phone or ultra widescreen or whatever.
+    Or orientation
+    Or different features on a device
+    Media queries allow us to modify our styles depending on particular parameters
+
+Media Queries
+    Queries begin with @media
+        @media (max-width: 800px) {
+            .sidebar {
+                display: none;
+            }
+        }
+
+        @media (min-width: 30em) and (orientation: landscape) {
+            #container {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    If you read the @media docs on MDN, it references different levels.
+        Level 5 is newest right now. Not many browsers support level 5 yet.
+    The parentheses seem to be like a condition, sorta like Powershell 'if' statement
+
+min-width: 800px
+    Affects any viewport width of 800px
+max-width: 800px
+    Affects any viewport width of up to 800px
+
+Can also use keywords:  and, or, not, only
+    @media (min-width: 800px) and (max-width: 600px) {
+        /* whatever */
+    }
