@@ -14,21 +14,26 @@ nav {
     justify-content: space-between;
 }
 
-ul {
-    border: 2px solid black;
-    flex-grow: 1;
-    max-width: 50%;
-}
-
 ul, li {
     display: inline;
     padding: 0;
     margin: 0;
 }
 
+ul {
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media (max-width: 615px) {
     h1 {
         font-size: 4em;
+    }
+    nav, nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
