@@ -1,0 +1,6 @@
+CDN
+Content Delivery Network
+    Hosted version of a stylesheet that we can access remotely.
+For production sites, you need to install it on the webserver!
+    Because the cloud-hosted stylesheet may change or be deleted one day.
+
